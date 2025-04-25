@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. David Steiner - Fort Myers Chiropractor with over 22 years of experience specializing in musculoskeletal care, sports injury rehabilitation, and holistic wellness.">
+    <title>Dr. David Steiner | Fort Myers Chiropractor | Center for Chiropractic Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables - Healthcare/Wellness Palette */
+        :root {
+            /* Color system */
+            --color-primary: #3a8fb7; /* Calming blue */
+            --color-primary-light: #4ba8d2;
+            --color-primary-dark: #2c7999;
+            --color-secondary: #4caf93; /* Healing green */
+            --color-secondary-light: #68c9ad;
+            --color-secondary-dark: #3c8c76;
+            --color-accent: #e9f5fc; /* Light blue accent */
+            --color-neutral-100: #ffffff;
+            --color-neutral-200: #f8f9fa;
+            --color-neutral-300: #e9ecef;
+            --color-neutral-400: #ced4da;
+            --color-neutral-500: #adb5bd;
+            --color-neutral-600: #6c757d;
+            --color-neutral-700: #495057;
+            --color-neutral-800: #343a40;
+            --color-neutral-900: #212529;
+            
+            /* Spacing system - based on 8px grid */
+            --space-1: 0.25rem;   /* 4px */
+            --space-2: 0.5rem;    /* 8px */
+            --space-3: 1rem;      /* 16px */
+            --space-4: 1.5rem;    /* 24px */
+            --space-5: 2rem;      /* 32px */
+            --space-6: 3rem;      /* 48px */
+            --space-7: 4rem;      /* 64px */
+            --space-8: 5rem;      /* 80px */
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            /* Animation system */
+            --transition-fast: 0.2s ease;
+            --transition-standard: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            
+            /* Border radius */
+            --radius-sm: 0.25rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 1rem;
+            
+            /* Shadow system */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            
+            /* Container widths */
+            --container-sm: 640px;
+            --container-md: 768px;
+            --container-lg: 1024px;
+            --container-xl: 1280px;
+        }
+        
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--color-neutral-800);
+            background-color: var(--color-neutral-100);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            line-height: 1.2;
+            margin-bottom: var(--space-3);
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            position: relative;
+            margin-bottom: var(--space-5);
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+        
+        .text-center h2:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 1.8rem);
+        }
+        
+        p {
+            margin-bottom: var(--space-3);
+            color: var(--color-neutral-700);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: all var(--transition-standard);
+        }
+        
+        a:hover {
+            color: var(--color-primary-dark);
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        section {
+            padding: var(--space-7) var(--space-3);
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: var(--container-lg);
+            margin: 0 auto;
+            padding: 0 var(--space-3);
+        }
+        
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-primary {
+            color: var(--color-primary);
+        }
+        
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+        
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+        
+        .bg-light {
+            background-color: var(--color-neutral-200);
+        }
+        
+        .bg-accent {
+            background-color: var(--color-accent);
+        }
+        
+        .mb-1 { margin-bottom: var(--space-1); }
+        .mb-2 { margin-bottom: var(--space-2); }
+        .mb-3 { margin-bottom: var(--space-3); }
+        .mb-4 { margin-bottom: var(--space-4); }
+        .mb-5 { margin-bottom: var(--space-5); }
+        
+        .mt-1 { margin-top: var(--space-1); }
+        .mt-2 { margin-top: var(--space-2); }
+        .mt-3 { margin-top: var(--space-3); }
+        .mt-4 { margin-top: var(--space-4); }
+        .mt-5 { margin-top: var(--space-5); }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: all var(--transition-standard);
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .btn:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            color: white;
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn--large {
+            padding: var(--space-3) var(--space-5);
+            font-size: 1.1rem;
+        }
+        
+        .btn--secondary {
+            background-color: var(--color-secondary);
+        }
+        
+        .btn--secondary:hover {
+            background-color: var(--color-secondary-dark);
+        }
+        
+        .btn--outline {
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+        
+        .btn--outline:hover {
+            background-color: var(--color-primary);
+            color: white;
+        }
+        
+        /* Header & Navigation */
+        .header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--color-neutral-100);
+            box-shadow: var(--shadow-sm);
+            padding: var(--space-2) 0;
+            transition: all var(--transition-standard);
+        }
+        
+        .header--scrolled {
+            padding: var(--space-1) 0;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .header__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header__logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+        }
+        
+        .header__logo span {
+            color: var(--color-secondary);
+        }
+        
+        .header__nav {
+            display: none;
+        }
+        
+        .header__nav-list {
+            display: flex;
+            gap: var(--space-4);
+        }
+        
+        .header__nav-link {
+            color: var(--color-neutral-800);
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .header__nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--color-primary);
+            transition: width var(--transition-standard);
+        }
+        
+        .header__nav-link:hover,
+        .header__nav-link.active {
+            color: var(--color-primary);
+        }
+        
+        .header__nav-link:hover:after,
+        .header__nav-link.active:after {
+            width: 100%;
+        }
+        
+        .header__cta {
+            display: none;
+        }
+        
+        .header__toggle {
+            background: none;
+            border: none;
+            color: var(--color-neutral-800);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            height: 100vh;
+            background-color: var(--color-neutral-100);
+            z-index: 2000;
+            padding: var(--space-6) var(--space-4);
+            transition: right var(--transition-standard);
+            box-shadow: var(--shadow-lg);
+            overflow-y: auto;
+        }
+        
+        .mobile-nav.active {
+            right: 0;
+        }
+        
+        .mobile-nav__close {
+            position: absolute;
+            top: var(--space-3);
+            right: var(--space-3);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-neutral-800);
+        }
+        
+        .mobile-nav__list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+            margin-top: var(--space-5);
+        }
+        
+        .mobile-nav__item {
+            border-bottom: 1px solid var(--color-neutral-300);
+            padding-bottom: var(--space-2);
+        }
+        
+        .mobile-nav__link {
+            color: var(--color-neutral-800);
+            font-weight: 500;
+            display: block;
+            width: 100%;
+        }
+        
+        .mobile-nav__link:hover {
+            color: var(--color-primary);
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1500;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-standard);
+        }
+        
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: var(--space-7) 0 var(--space-8);
+            background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white;
+            clip-path: polygon(0 100%, 100% 100%, 100% 60%, 75% 80%, 50% 60%, 25% 80%, 0 60%);
+            z-index: 1;
+        }
+        
+        .hero__content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .hero__subtitle {
+            color: var(--color-accent);
+            font-weight: 400;
+            margin-bottom: var(--space-3);
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+        }
+        
+        .hero__title {
+            color: white;
+            margin-bottom: var(--space-4);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+        }
+        
+        .hero__description {
+            color: var(--color-neutral-200);
+            margin-bottom: var(--space-5);
+            font-size: clamp(1rem, 1.5vw, 1.1rem);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero__cta-group {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-3);
+            flex-wrap: wrap;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--color-neutral-100);
+            padding: var(--space-7) 0;
+            position: relative;
+        }
+        
+        .services__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+            margin-top: var(--space-5);
+        }
+        
+        .service-card {
+            background-color: var(--color-neutral-100);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            transition: all var(--transition-standard);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-neutral-300);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary-light);
+        }
+        
+        .service-card__icon {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: var(--space-3);
+        }
+        
+        .service-card__title {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-2);
+            color: var(--color-neutral-900);
+        }
+        
+        .service-card__description {
+            color: var(--color-neutral-700);
+            flex-grow: 1;
+        }
+        
+        .service-card__link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: var(--space-3);
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+        
+        .service-card__link i {
+            margin-left: 0.5rem;
+            transition: transform var(--transition-standard);
+        }
+        
+        .service-card__link:hover i {
+            transform: translateX(4px);
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--color-accent);
+            padding: var(--space-7) 0;
+        }
+        
+        .about__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-5);
+            align-items: center;
+        }
+        
+        .about__image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        
+        .about__image img {
+            transition: transform var(--transition-slow);
+            width: 100%;
+        }
+        
+        .about__image:hover img {
+            transform: scale(1.02);
+        }
+        
+        .about__content h2:after {
+            left: 0;
+            transform: none;
+        }
+        
+        .about__experience {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-4);
+        }
+        
+        .about__experience-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            line-height: 1;
+            margin-right: var(--space-2);
+        }
+        
+        .about__experience-text {
+            color: var(--color-neutral-700);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+        
+        .about__credentials {
+            margin-top: var(--space-4);
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--color-neutral-300);
+        }
+        
+        .about__credentials-title {
+            font-size: 1.2rem;
+            margin-bottom: var(--space-3);
+            color: var(--color-neutral-800);
+        }
+        
+        .about__credentials-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+        
+        .about__credential {
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .about__credential i {
+            color: var(--color-primary);
+            margin-right: var(--space-2);
+            margin-top: 5px;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: var(--space-7) 0;
+            background-color: var(--color-neutral-100);
+        }
+        
+        .testimonials__container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .testimonials__slider {
+            position: relative;
+            overflow: hidden;
+            margin-top: var(--space-5);
+        }
+        
+        .testimonials__slides {
+            display: flex;
+            transition: transform var(--transition-standard);
+        }
+        
+        .testimonial {
+            min-width: 100%;
+            padding: 0 var(--space-2);
+            opacity: 0;
+            transition: opacity var(--transition-standard);
+        }
+        
+        .testimonial.active {
+            opacity: 1;
+        }
+        
+        .testimonial__content {
+            background-color: var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            position: relative;
+            margin-bottom: var(--space-4);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .testimonial__content:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 30px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--color-neutral-200);
+            transform: rotate(45deg);
+        }
+        
+        .testimonial__text {
+            font-style: italic;
+            color: var(--color-neutral-800);
+            margin-bottom: var(--space-3);
+            position: relative;
+        }
+        
+        .testimonial__text:before {
+            content: '\201C';
+            position: absolute;
+            top: -5px;
+            left: -15px;
+            font-size: 2rem;
+            color: var(--color-primary-light);
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial__text:after {
+            content: '\201D';
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            font-size: 2rem;
+            color: var(--color-primary-light);
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial__rating {
+            color: #FFD700;
+            margin-bottom: var(--space-2);
+        }
+        
+        .testimonial__author {
+            display: flex;
+            align-items: center;
+            margin-left: var(--space-3);
+        }
+        
+        .testimonial__author-name {
+            font-weight: 600;
+            color: var(--color-neutral-800);
+        }
+        
+        .testimonial__author-title {
+            color: var(--color-neutral-600);
+            font-size: 0.9rem;
+        }
+        
+        .testimonials__controls {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-2);
+            margin-top: var(--space-4);
+        }
+        
+        .testimonials__dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--color-neutral-400);
+            cursor: pointer;
+            transition: all var(--transition-standard);
+        }
+        
+        .testimonials__dot.active {
+            background-color: var(--color-primary);
+            transform: scale(1.2);
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--color-neutral-200);
+            padding: var(--space-7) 0;
+        }
+        
+        .contact__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-5);
+        }
+        
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+        
+        .contact__item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-3);
+        }
+        
+        .contact__item-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-primary-light);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact__item-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: var(--space-1);
+        }
+        
+        .contact__item-content p {
+            color: var(--color-neutral-700);
+            margin-bottom: 0;
+        }
+        
+        .contact__form {
+            background-color: var(--color-neutral-100);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .form__group {
+            margin-bottom: var(--space-3);
+        }
+        
+        .form__label {
+            display: block;
+            margin-bottom: var(--space-1);
+            color: var(--color-neutral-800);
+            font-weight: 500;
+        }
+        
+        .form__input {
+            width: 100%;
+            padding: var(--space-2);
+            border: 1px solid var(--color-neutral-400);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            transition: all var(--transition-standard);
+        }
+        
+        .form__input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 2px rgba(58, 143, 183, 0.2);
+        }
+        
+        .form__input::placeholder {
+            color: var(--color-neutral-500);
+        }
+        
+        .form__textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form__submit {
+            width: 100%;
+            margin-top: var(--space-2);
+        }
+        
+        .contact__map {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 300px;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .contact__map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--color-neutral-800);
+            color: var(--color-neutral-300);
+            padding: var(--space-6) 0 var(--space-3);
+        }
+        
+        .footer__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-4);
+        }
+        
+        .footer__brand {
+            margin-bottom: var(--space-3);
+        }
+        
+        .footer__logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-neutral-100);
+            margin-bottom: var(--space-2);
+            display: inline-block;
+        }
+        
+        .footer__logo span {
+            color: var(--color-primary-light);
+        }
+        
+        .footer__description {
+            color: var(--color-neutral-400);
+            margin-bottom: var(--space-3);
+        }
+        
+        .footer__heading {
+            color: var(--color-neutral-100);
+            font-size: 1.2rem;
+            margin-bottom: var(--space-3);
+            position: relative;
+            padding-bottom: var(--space-2);
+        }
+        
+        .footer__heading:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+        
+        .footer__links {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+        
+        .footer__link {
+            color: var(--color-neutral-400);
+            transition: all var(--transition-standard);
+            display: inline-block;
+        }
+        
+        .footer__link:hover {
+            color: var(--color-primary-light);
+            transform: translateX(3px);
+        }
+        
+        .footer__social {
+            display: flex;
+            gap: var(--space-2);
+            margin-top: var(--space-3);
+        }
+        
+        .footer__social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--color-neutral-300);
+            border-radius: 50%;
+            transition: all var(--transition-standard);
+        }
+        
+        .footer__social-link:hover {
+            background-color: var(--color-primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .footer__bottom {
+            margin-top: var(--space-5);
+            padding-top: var(--space-3);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        
+        .footer__copyright {
+            color: var(--color-neutral-500);
+            font-size: 0.9rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-standard);
+            z-index: 999;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Media Queries */
+        @media (min-width: 640px) {
+            .services__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer__container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .hero__cta-group {
+                justify-content: center;
+            }
+            
+            .contact__container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .header__nav {
+                display: block;
+            }
+            
+            .header__cta {
+                display: block;
+            }
+            
+            .header__toggle {
+                display: none;
+            }
+            
+            .services__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .about__container {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .footer__container {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <span>Center for</span> Chiropractic Solutions
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#home" class="header__nav-link active">Home</a></li>
+                    <li><a href="#services" class="header__nav-link">Services</a></li>
+                    <li><a href="#about" class="header__nav-link">About</a></li>
+                    <li><a href="#testimonials" class="header__nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#contact" class="btn header__cta">Schedule Appointment</a>
+            
+            <button class="header__toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav__close" id="mobileNavClose">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a href="#home" class="mobile-nav__link">Home</a></li>
+            <li class="mobile-nav__item"><a href="#services" class="mobile-nav__link">Services</a></li>
+            <li class="mobile-nav__item"><a href="#about" class="mobile-nav__link">About</a></li>
+            <li class="mobile-nav__item"><a href="#testimonials" class="mobile-nav__link">Testimonials</a></li>
+            <li class="mobile-nav__item"><a href="#contact" class="mobile-nav__link">Contact</a></li>
+            <li class="mobile-nav__item"><a href="#contact" class="btn">Schedule Appointment</a></li>
+        </ul>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero__content">
+            <p class="hero__subtitle">Fort Myers, Florida</p>
+            <h1 class="hero__title">Restore Your Health & Wellness with Expert Chiropractic Care</h1>
+            <p class="hero__description">
+                Dr. David Steiner provides compassionate, results-driven care with over 22 years of experience. 
+                We specialize in musculoskeletal care, sports rehabilitation, and holistic wellness solutions 
+                tailored to your unique needs.
+            </p>
+            <div class="hero__cta-group">
+                <a href="#contact" class="btn btn--large">Schedule Your Consultation</a>
+                <a href="#services" class="btn btn--large btn--outline">Explore Our Services</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="text-center">
+                <h2>Our Specialized Services</h2>
+                <p>We offer comprehensive chiropractic solutions to help you achieve optimal health and wellness.</p>
+            </div>
+            
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-spine"></i>
+                    </div>
+                    <h3 class="service-card__title">Spinal Adjustments</h3>
+                    <p class="service-card__description">
+                        Precise, gentle spinal manipulations to correct misalignments, reduce pain, 
+                        and restore proper nervous system function for improved overall health.
+                    </p>
+                    <a href="#contact" class="service-card__link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="service-card__title">Sports Injury Rehabilitation</h3>
+                    <p class="service-card__description">
+                        Specialized treatment for athletes recovering from injuries, combining chiropractic 
+                        care with therapeutic exercises to restore mobility and strength.
+                    </p>
+                    <a href="#contact" class="service-card__link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="service-card__title">Advanced Diagnostics</h3>
+                    <p class="service-card__description">
+                        Comprehensive evaluations using state-of-the-art diagnostic tools to identify 
+                        the root cause of your pain and develop targeted treatment plans.
+                    </p>
+                    <a href="#contact" class="service-card__link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="service-card__title">Holistic Wellness</h3>
+                    <p class="service-card__description">
+                        Whole-body approach to wellness, addressing nutrition, stress management, and lifestyle 
+                        factors that impact your overall health and quality of life.
+                    </p>
+                    <a href="#contact" class="service-card__link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="service-card__title">Non-Surgical Pain Relief</h3>
+                    <p class="service-card__description">
+                        Effective alternatives to surgery and medications for chronic pain management, 
+                        including advanced soft tissue techniques and therapeutic modalities.
+                    </p>
+                    <a href="#contact" class="service-card__link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="service-card__title">Personalized Care Plans</h3>
+                    <p class="service-card__description">
+                        Individualized treatment strategies tailored to your specific condition, health goals, 
+                        and lifestyle needs for long-term success and wellness.
+                    </p>
+                    <a href="#contact" class="service-card__link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about__container">
+            <div class="about__image">
+                <img src="https://media.licdn.com/dms/image/v2/D5635AQGGQd5r7VACCw/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1713513159859?e=1746046800&v=beta&t=2Cd0KroSD8z_N2ulI5MWSysON78dH9boO-J95UzJISw" alt="Dr. David Steiner, Fort Myers Chiropractor">
+            </div>
+            
+            <div class="about__content">
+                <h2>About Dr. David Steiner</h2>
+                
+                <div class="about__experience">
+                    <span class="about__experience-number">22+</span>
+                    <span class="about__experience-text">Years of Experience in Chiropractic Care</span>
+                </div>
+                
+                <p>
+                    Dr. David Steiner is a highly respected chiropractor based in Fort Myers, Florida, dedicated to 
+                    helping patients achieve optimal health through natural, non-invasive approaches to pain relief 
+                    and wellness.
+                </p>
+                
+                <p>
+                    With over two decades of clinical experience, Dr. Steiner combines traditional chiropractic 
+                    techniques with cutting-edge therapeutic modalities to create personalized treatment plans 
+                    that address the root cause of his patients' conditions, not just their symptoms.
+                </p>
+                
+                <p>
+                    Known for his compassionate and results-driven approach, Dr. Steiner takes time to listen to 
+                    each patient's concerns and educate them about their condition, empowering them to take an 
+                    active role in their healing process.
+                </p>
+                
+                <div class="about__credentials">
+                    <h3 class="about__credentials-title">Professional Credentials</h3>
+                    
+                    <ul class="about__credentials-list">
+                        <li class="about__credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Doctor of Chiropractic, Palmer College of Chiropractic</span>
+                        </li>
+                        <li class="about__credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Board Certified by the National Board of Chiropractic Examiners</span>
+                        </li>
+                        <li class="about__credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced Certification in Sports Injury Management</span>
+                        </li>
+                        <li class="about__credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Member of the American Chiropractic Association</span>
+                        </li>
+                        <li class="about__credential">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Florida Chiropractic Association, Active Member</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container testimonials__container">
+            <div class="text-center">
+                <h2>What Our Patients Say</h2>
+                <p>Read about the experiences of patients who have found relief and improved wellness through our care.</p>
+            </div>
+            
+            <div class="testimonials__slider" id="testimonialSlider">
+                <div class="testimonials__slides" id="testimonialSlides">
+                    <div class="testimonial active">
+                        <div class="testimonial__content">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                After struggling with chronic back pain for years and trying various treatments, 
+                                Dr. Steiner's approach made all the difference. His comprehensive assessment and 
+                                personalized treatment plan addressed issues that no one else had identified. 
+                                I'm now pain-free and have the tools to maintain my spinal health.
+                            </p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div>
+                                <div class="testimonial__author-name">Michael R.</div>
+                                <div class="testimonial__author-title">Patient for 3 years</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                As a marathon runner, I thought my career was over when I developed severe knee pain. 
+                                Dr. Steiner not only helped me recover through his sports rehabilitation program 
+                                but also improved my overall biomechanics. His holistic approach addressed 
+                                imbalances I didn't even know I had. I'm now running better than before!
+                            </p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div>
+                                <div class="testimonial__author-name">Jennifer L.</div>
+                                <div class="testimonial__author-title">Competitive Runner</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial__content">
+                            <div class="testimonial__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial__text">
+                                What sets Dr. Steiner apart is his genuine care and attention to detail. 
+                                He took time to explain my condition, answered all my questions, and created 
+                                a treatment plan that worked with my busy schedule. The office staff is friendly 
+                                and professional, making each visit a pleasant experience. Highly recommend!
+                            </p>
+                        </div>
+                        <div class="testimonial__author">
+                            <div>
+                                <div class="testimonial__author-name">Sarah K.</div>
+                                <div class="testimonial__author-title">Fort Myers Resident</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__controls" id="testimonialControls">
+                    <div class="testimonials__dot active" data-index="0"></div>
+                    <div class="testimonials__dot" data-index="1"></div>
+                    <div class="testimonials__dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2>Contact Us</h2>
+                <p>Schedule your consultation or ask any questions you may have about our services.</p>
+            </div>
+            
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact__item-content">
+                            <h3>Our Location</h3>
+                            <p>12345 Health Avenue, Suite 200<br>Fort Myers, FL 33901</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact__item-content">
+                            <h3>Phone</h3>
+                            <p>(239) 555-1234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact__item-content">
+                            <h3>Email</h3>
+                            <p>info@steinerchiropractic.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__item">
+                        <div class="contact__item-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact__item-content">
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 8am - 6pm<br>Saturday: 9am - 1pm<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112479.43034721071!2d-81.94956367143566!3d26.614310499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db179e2fbbc39f%3A0x717fb77af53bb3a2!2sFort%20Myers%2C%20FL!5e0!3m2!1sen!2sus!4v1714050305728!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact__form">
+                    <form id="appointmentForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="Your email" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="Your phone number" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="service" class="form__label">Service Interested In</label>
+                            <select id="service" name="service" class="form__input" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="Spinal Adjustment">Spinal Adjustment</option>
+                                <option value="Sports Injury Rehabilitation">Sports Injury Rehabilitation</option>
+                                <option value="Holistic Wellness">Holistic Wellness</option>
+                                <option value="Pain Management">Pain Management</option>
+                                <option value="Initial Consultation">Initial Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" class="form__input form__textarea" placeholder="Please describe your concerns or ask any questions"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn form__submit">Request Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">Center for <span>Chiropractic Solutions</span></a>
+                    <p class="footer__description">
+                        Dr. David Steiner provides compassionate, results-driven chiropractic care to help patients
+                        achieve optimal health and wellness in Fort Myers, Florida.
+                    </p>
+                </div>
+                
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer__column">
+                <h3 class="footer__heading">Quick Links</h3>
+                <ul class="footer__links">
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#services" class="footer__link">Our Services</a></li>
+                    <li><a href="#about" class="footer__link">About Dr. Steiner</a></li>
+                    <li><a href="#testimonials" class="footer__link">Testimonials</a></li>
+                    <li><a href="#contact" class="footer__link">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__column">
+                <h3 class="footer__heading">Our Services</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Spinal Adjustments</a></li>
+                    <li><a href="#" class="footer__link">Sports Rehabilitation</a></li>
+                    <li><a href="#" class="footer__link">Holistic Wellness</a></li>
+                    <li><a href="#" class="footer__link">Pain Management</a></li>
+                    <li><a href="#" class="footer__link">Nutritional Counseling</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__column">
+                <h3 class="footer__heading">Contact Info</h3>
+                <ul class="footer__links">
+                    <li class="footer__link">12345 Health Avenue, Suite 200</li>
+                    <li class="footer__link">Fort Myers, FL 33901</li>
+                    <li><a href="tel:2395551234" class="footer__link">(239) 555-1234</a></li>
+                    <li><a href="mailto:info@steinerchiropractic.com" class="footer__link">info@steinerchiropractic.com</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <div class="container">
+                <p class="footer__copyright">
+                    &copy; <span id="currentYear"></span> Center for Chiropractic Solutions. All Rights Reserved. | Dr. David Steiner | Fort Myers, Florida
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- JavaScript -->
+    <script>
+        // Current Year for Footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile Navigation Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+        const mobileNav = document.getElementById('mobileNav');
+        const overlay = document.getElementById('overlay');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        mobileNavClose.addEventListener('click', closeMobileNav);
+        overlay.addEventListener('click', closeMobileNav);
+        
+        // Mobile Nav Links Close Menu When Clicked
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav__link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileNav);
+        });
+        
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+        
+        // Testimonial Slider
+        const testimonialSlides = document.getElementById('testimonialSlides');
+        const testimonialDots = document.querySelectorAll('.testimonials__dot');
+        const testimonials = document.querySelectorAll('.testimonial');
+        let currentTestimonial = 0;
+        let testimonialInterval;
+        
+        function showTestimonial(index) {
+            // Update active class on testimonials
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            testimonials[index].classList.add('active');
+            
+            // Update active class on dots
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            testimonialDots[index].classList.add('active');
+            
+            // Update slider position
+            testimonialSlides.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update current index
+            currentTestimonial = index;
+        }
+        
+        // Set up dot click events
+        testimonialDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.getAttribute('data-index'));
+                showTestimonial(index);
+                resetTestimonialInterval();
+            });
+        });
+        
+        // Auto-advance testimonials
+        function startTestimonialInterval() {
+            testimonialInterval = setInterval(() => {
+                let nextIndex = currentTestimonial + 1;
+                if (nextIndex >= testimonials.length) {
+                    nextIndex = 0;
+                }
+                showTestimonial(nextIndex);
+            }, 5000);
+        }
+        
+        function resetTestimonialInterval() {
+            clearInterval(testimonialInterval);
+            startTestimonialInterval();
+        }
+        
+        startTestimonialInterval();
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Validation
+        const appointmentForm = document.getElementById('appointmentForm');
+        
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simple validation
+            let valid = true;
+            const formInputs = appointmentForm.querySelectorAll('.form__input');
+            
+            formInputs.forEach(input => {
+                if (input.hasAttribute('required') && !input.value.trim()) {
+                    valid = false;
+                    input.style.borderColor = 'red';
+                } else {
+                    input.style.borderColor = '';
+                }
+            });
+            
+            // Email validation
+            const emailInput = document.getElementById('email');
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (emailInput.value && !emailPattern.test(emailInput.value)) {
+                valid = false;
+                emailInput.style.borderColor = 'red';
+            }
+            
+            // Phone validation
+            const phoneInput = document.getElementById('phone');
+            const phonePattern = /^[0-9\-\(\)\s]+$/;
+            
+            if (phoneInput.value && !phonePattern.test(phoneInput.value)) {
+                valid = false;
+                phoneInput.style.borderColor = 'red';
+            }
+            
+            if (valid) {
+                // In a real implementation, you would submit the form data to a server
+                alert('Thank you for your submission! We will contact you shortly to confirm your appointment.');
+                appointmentForm.reset();
+            } else {
+                alert('Please fill in all required fields correctly.');
+            }
+        });
+        
+        // Clear validation styles on input
+        const formInputs = document.querySelectorAll('.form__input');
+        formInputs.forEach(input => {
+            input.addEventListener('input', () => {
+                input.style.borderColor = '';
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Active navigation based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.header__nav-link');
+        
+        function highlightNavLink() {
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - document.querySelector('.header').offsetHeight;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', highlightNavLink);
+        window.addEventListener('load', highlightNavLink);
+    </script>
+</body>
+</html>
